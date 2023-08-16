@@ -11,6 +11,7 @@ services:
       - net
   remote_host:
     container_name: remote-host
+    platform: linux/x86_64
     image: remote-host
     build:
       context: ./centos7
