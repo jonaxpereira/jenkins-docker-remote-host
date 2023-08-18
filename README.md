@@ -17,3 +17,11 @@ use testdb;
 create table info (name varchar(20), apellido varchar(20), edad int(2));
 show tables;
 ```
+
+```bash
+mysqldump -u root -h db_host -p1234 testdb > /tmp/db.sql
+export AWS_ACCESS_KEY_ID=<<AWS-ACCESS-KEY-ID>>
+export AWS_SECRET_ACCESS_KEY=<<AWS-SECRET-ACCESS-KEY>>
+export AWS_DEFAULT_REGION=us-west-2
+aws s3 cp /tmp/db.sql s3://jenkins-udemy-jonaxpereira
+```
