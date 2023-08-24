@@ -25,3 +25,7 @@ export AWS_SECRET_ACCESS_KEY=<<AWS-SECRET-ACCESS-KEY>>
 export AWS_DEFAULT_REGION=us-west-2
 aws s3 cp /tmp/db.sql s3://jenkins-udemy-jonaxpereira
 ```
+
+```bash
+chmod 600 remote-key
+```

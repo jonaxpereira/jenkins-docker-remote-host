@@ -2,5 +2,8 @@ jenkins_home
 db_data
 
 aws-key.csv
+
 centos7/remote-key
 centos7/remote-key.pub
+
+jenkins-ansible/remote-key
