@@ -1,0 +1,6 @@
+- name: Ansible Jenkins Playbook
+  hosts: test1
+  tasks:
+  - name: Install Jenkins
+    shell: |
+      echo "Hola Mundo" > /tmp/hola-ansible
